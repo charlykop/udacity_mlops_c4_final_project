@@ -1,10 +1,6 @@
 import pandas as pd
 from sklearn.metrics import fbeta_score, precision_score, recall_score
 from sklearn.linear_model import LogisticRegression
-# from aequitas.group import Group
-# from aequitas.bias import Bias
-# from aequitas.fairness import Fairness
-# from aequitas.plotting import Plot
 import numpy as np
 from sklearn.preprocessing import LabelBinarizer, OneHotEncoder
 

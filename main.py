@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import pickle
 import pandas as pd
-from starter.ml.model import inference, process_data
+from ml.model import inference, process_data
 
 class Data(BaseModel):
     age: int
@@ -50,11 +50,11 @@ class Data(BaseModel):
 
 # load model, encoder and LabelBinarizer
 current_dir = os.path.dirname(__file__)
-with open(os.path.join(current_dir + '/starter/model/trained_model.pkl'), 'rb') as file:
+with open(os.path.join(current_dir + '/model/trained_model.pkl'), 'rb') as file:
     model = pickle.load(file)
-with open(os.path.join(current_dir + '/starter/model/label_binarizer.pkl'), 'rb') as file:
+with open(os.path.join(current_dir + '/model/label_binarizer.pkl'), 'rb') as file:
     lb = pickle.load(file)
-with open(os.path.join(current_dir + '/starter/model/encoder.pkl'), 'rb') as file:
+with open(os.path.join(current_dir + '/model/encoder.pkl'), 'rb') as file:
     encoder = pickle.load(file)
 
 
