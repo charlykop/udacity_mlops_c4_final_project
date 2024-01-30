@@ -52,12 +52,12 @@ class Data(BaseModel):
     
 
 # load model, encoder and LabelBinarizer
-current_dir = os.getcwd()
-with open(current_dir + '/model/trained_model.pkl', 'rb') as file:
+current_dir = os.path.dirname(__file__)
+with open(os.path.join(current_dir + '/model/trained_model.pkl'), 'rb') as file:
     model = pickle.load(file)
-with open(current_dir + '/model/label_binarizer.pkl', 'rb') as file:
+with open(os.path.join(current_dir + '/model/label_binarizer.pkl'), 'rb') as file:
     lb = pickle.load(file)
-with open(current_dir + '/model/encoder.pkl', 'rb') as file:
+with open(os.path.join(current_dir + '/model/encoder.pkl'), 'rb') as file:
     encoder = pickle.load(file)
 
 
