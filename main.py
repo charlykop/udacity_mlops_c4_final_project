@@ -45,7 +45,6 @@ class Data(BaseModel):
             
     #     }
     # }
-        # allow_population_by_field_name = True
     
 
 # load model, encoder and LabelBinarizer
