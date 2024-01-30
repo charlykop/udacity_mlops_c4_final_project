@@ -1,25 +1,25 @@
 import os
 from fastapi import FastAPI
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 import pickle
 import pandas as pd
 from ml.model import inference, process_data
 
 class Data(BaseModel):
-    age: int
-    workclass: str
-    fnlgt: int
-    education: str
-    education_num: int 
-    marital_status: str
-    occupation: str
-    relationship: str
-    race: str
-    sex: str
-    capital_gain: int 
-    capital_loss: int 
-    hours_per_week: int 
-    native_country: str 
+    age: int = Field(examples=[29])
+    workclass: str = Field(examples=["State-gov"])
+    fnlgt: int = Field(examples=[77516])
+    education: str = Field(examples=["Bachelors"])
+    education_num: int = Field(examples=[13])
+    marital_status: str = Field(examples=["Never-married"])
+    occupation: str = Field(examples=["Adm-clerical"])
+    relationship: str = Field(examples=["Not-in-family"])
+    race: str = Field(examples=["White"])
+    sex: str = Field(examples=["Male"])
+    capital_gain: int = Field(examples=[2174])
+    capital_loss: int = Field(examples=[0])
+    hours_per_week: int = Field(examples=[40])
+    native_country: str = Field(examples=["United-States"])
 
 
     # model_config = {
