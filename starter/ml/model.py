@@ -5,7 +5,7 @@ from aequitas.group import Group
 from aequitas.bias import Bias
 from aequitas.fairness import Fairness
 from aequitas.plotting import Plot
-from .data import process_data
+from data import process_data
 
 
 # Optional: implement hyperparameter tuning.
