@@ -1,10 +1,8 @@
 import os
-from typing import Union, List
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel, Field
+from fastapi import FastAPI
+from pydantic import BaseModel
 import pickle
 import pandas as pd
-import json
 from ml.data import process_data
 from ml.model import inference
 

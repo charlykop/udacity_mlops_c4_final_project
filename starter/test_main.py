@@ -1,12 +1,8 @@
+import json
 from fastapi.testclient import TestClient
 from main import app
 
-import json
-import pandas as pd
-import pickle
-import os
-from ml.data import process_data
-from ml.model import inference
+
 
 client = TestClient(app)
 
