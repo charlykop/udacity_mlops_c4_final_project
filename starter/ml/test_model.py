@@ -5,7 +5,7 @@ import pickle
 from sklearn.preprocessing import LabelBinarizer, OneHotEncoder
 from sklearn.linear_model import LogisticRegression
 from .data import process_data
-from .model import train_model, compute_model_metrics, inference
+from model import train_model, compute_model_metrics, inference
 
 @pytest.fixture
 def data():
