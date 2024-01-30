@@ -1,7 +1,6 @@
 import pandas as pd
 import pytest
 import numpy as np
-import pickle
 from sklearn.preprocessing import LabelBinarizer, OneHotEncoder
 from sklearn.linear_model import LogisticRegression
 from ml.model import train_model, compute_model_metrics, inference, process_data

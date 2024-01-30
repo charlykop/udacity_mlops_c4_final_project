@@ -13,9 +13,9 @@ As validation data 20% of the census data were used.
 ## Metrics
 The following metrics were used to evaluate the model: 
 
-- Precision: 0.7241992882562278
-- Recall: 0.25629722921914355
-- F-beta: 0.3786046511627907
+- Precision: 0.7063903281519862
+- Recall: 0.26370083816892326
+- F-beta: 0.384037558685446
 
 ## Ethical Considerations
 The data is not well balanced from the features and therefore not representative for e.g.:
